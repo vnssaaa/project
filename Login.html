@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanessa Travel - Masuk</title>
+    <link rel="stylesheet" href="css/stylee.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="Assets/logo.jpg" alt="Logo" class="logo-img">
+            <span class="brand-name">Vanessa Travel</span>
+        </div>
+ 
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Destinasi.html">Destinasi</a></li>
+                <li><a href="Paket Wisata.html">Paket Wisata</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="register.html">Daftar</a></li>
+                <li><a href="login.html" class="active">Masuk</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main class="auth-wrap">
+        <div class="auth-card">
+            <div class="auth-heading">
+                <h1>Selamat Datang Kembali</h1>
+                <p>Masuk untuk melanjutkan perjalananmu bersama Vanessa Travel.</p>
+            </div>
+ 
+            <form id="formMasuk" novalidate>
+                <div class="field-row">
+                    <label for="namaPenggunaMasuk">Username</label>
+                    <input type="text" id="namaPenggunaMasuk" name="namaPenggunaMasuk" placeholder="Masukkan username">
+                    <small class="pesan-error" id="errNamaPenggunaMasuk"></small>
+                </div>
+ 
+                <div class="field-row">
+                    <label for="sandiMasuk">Password</label>
+                    <input type="password" id="sandiMasuk" name="sandiMasuk" placeholder="Masukkan password">
+                    <small class="pesan-error" id="errSandiMasuk"></small>
+                </div>
+ 
+                <button type="submit" id="tombolMasuk" class="btn-order" disabled>Masuk</button>
+            </form>
+ 
+            <p class="auth-switch">Belum memiliki akun? <a href="register.html">Daftar di sini</a></p>
+        </div>
+    </main>
+ 
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Vanessa Travel</h3>
+                <p>Solusi perjalanan terbaik untuk menjelajahi keindahan dunia dengan kenyamanan ekstra.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Destinasi.html">Destinasi</a></li>
+                    <li><a href="Paket Wisata.html">Paket Wisata</a></li>
+                    <li><a href="Event.html">Event</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Email: info@vanessatravel.com</p>
+                <p>WhatsApp: +62 812 3456 789</p>
+                <p>Alamat: Jakarta, Indonesia</p>
+            </div>
+        </div>
+ 
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vanessa Travel. All Rights Reserved.</p>
+        </div>
+    </footer>
+ 
+    <script src="login.js"></script>
+</body>
+</html>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanessa Travel - Paket Wisata</title>
-    <link rel="stylesheet" href="css/vc.css">
+    <link rel="stylesheet" href="css/stylee.css">
+    <link rel="stylesheet" href="css/auth.css">
 </head>
  
 <body>
@@ -13,18 +14,22 @@
             <img src="Assets/logo.jpg" alt="Logo" class="logo-img">
             <span class="brand-name">Vanessa Travel</span>
         </div>
-        
+       
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Destinasi.html">Destinasi</a></li>
                 <li><a href="Paket Wisata.html" class="active">Paket Wisata</a></li>
                 <li><a href="Event.html">Event</a></li>
+                <li id="navAuth">
+                <a href="Register.html">Daftar</a>
+                <a href="Login.html">Masuk</a>
+                </li>
             </ul>
         </nav>
     </header>
-
-
+ 
+ 
     <div class="page-wrapper">
  
         <main class="product-grid">
@@ -74,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            
+           
             <div class="product-card">
                 <div class="image-box">
                     <img src="Assets/rajampat1.jpg" alt="Product Image">
@@ -89,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            
+           
             <div class="product-card">
                 <div class="image-box">
                     <img src="Assets/bromo1.jpg" alt="Product Image">
@@ -104,17 +109,17 @@
                     </div>
                 </div>
             </div>
-
+ 
         </main>
     </div>
-
+ 
     <footer class="main-footer">
     <div class="footer-container">
         <div class="footer-col">
             <h3>Vanessa Travel</h3>
             <p>Solusi perjalanan terbaik untuk menjelajahi keindahan dunia dengan kenyamanan ekstra.</p>
         </div>
-
+ 
         <div class="footer-col">
             <h4>Quick Links</h4>
             <ul>
@@ -124,7 +129,7 @@
                 <li><a href="Event.html">Event</a></li>
             </ul>
         </div>
-
+ 
         <div class="footer-col">
             <h4>Contact Us</h4>
             <p>Email: info@vanessatravel.com</p>
@@ -132,11 +137,23 @@
             <p>Alamat: Jakarta, Indonesia</p>
         </div>
     </div>
-    
+   
     <div class="footer-bottom">
         <p>&copy; 2024 Vanessa Travel. All Rights Reserved.</p>
     </div>
 </footer>
+<script>
+        const namaTersimpan = localStorage.getItem("namaPengguna");
+        const navAuth = document.getElementById("navAuth");
+        if (namaTersimpan) {
+            navAuth.innerHTML = `Hello, ${namaTersimpan} ! <a href = "#" id="tombolKeluar"> Keluar </a>`;
+            document.getElementById("tombolKeluar").addEventListener('click', function (e) {
+                e.preventDefault();
+                localStorage.removeItem("namaPengguna");
+                window.location.reload();
+            })
+        }
+    </script>
 </body>
  
 </html>
