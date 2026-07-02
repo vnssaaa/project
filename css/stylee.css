@@ -898,4 +898,47 @@ body {
 .main-footer {
     animation: fadeInY 0.6s ease forwards;
 }
+
+.cart-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-qty {
+    background-color: rgb(172, 82, 137);
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.qty-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.summary-box {
+    background-color: #f9f9f9;
+    border: 2px solid #d7d7d7;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    text-align: right;
+    font-family: sans-serif;
+}
+
+.summary-box h3 {
+    margin: 5px 0;
+}
+
+#total-pembayaran {
+    color: rgb(243, 32, 25);
+    font-size: 22px;
+    font-weight: bold;
+}
  
